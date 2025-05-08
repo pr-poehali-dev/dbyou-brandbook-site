@@ -1,7 +1,7 @@
-
-import React from 'react';
+import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import Icon from "@/components/ui/icon";
 
 const BrandMission = () => {
   return (
@@ -10,7 +10,7 @@ const BrandMission = () => {
         <h2 className="font-serif text-3xl md:text-4xl mb-8 animate-fade-in">
           SMART BEAUTY — уход без компромиссов
         </h2>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <div className="mb-10">
@@ -19,7 +19,7 @@ const BrandMission = () => {
                 «Упрощаем бьюти-рутину через умные решения».
               </blockquote>
             </div>
-            
+
             <div>
               <h3 className="font-serif text-2xl mb-4">Позиционирование:</h3>
               <ul className="space-y-4">
@@ -29,10 +29,12 @@ const BrandMission = () => {
                   </span>
                   <div>
                     <h4 className="font-medium">Премиальный масс-маркет</h4>
-                    <p className="text-dbyou-purple/80">Доступная цена без ущерба качеству.</p>
+                    <p className="text-dbyou-purple/80">
+                      Доступная цена без ущерба качеству.
+                    </p>
                   </div>
                 </li>
-                
+
                 <li className="flex items-start">
                   <span className="bg-dbyou-purple text-white rounded-full p-1 mr-3 mt-1">
                     <Icon name="CheckCheck" className="h-4 w-4" />
@@ -40,7 +42,8 @@ const BrandMission = () => {
                   <div>
                     <h4 className="font-medium">Многофункциональность</h4>
                     <p className="text-dbyou-purple/80">
-                      1 продукт = эксфолиация + тонизирование + увлажнение + выравнивание тона + защита от воспалений.
+                      1 продукт = эксфолиация + тонизирование + увлажнение +
+                      выравнивание тона + защита от воспалений.
                     </p>
                     <p className="text-dbyou-purple/80 mt-1">
                       Идеально для тех, кто ценит время и эффективность.
@@ -50,7 +53,7 @@ const BrandMission = () => {
               </ul>
             </div>
           </div>
-          
+
           <div className="flex items-center justify-center">
             <Card className="w-full max-w-md">
               <CardContent className="p-6">
@@ -58,7 +61,7 @@ const BrandMission = () => {
                   <h3 className="font-serif text-2xl">Smart Beauty</h3>
                   <Badge className="bg-dbyou-purple text-white">D'BYOU</Badge>
                 </div>
-                
+
                 <div className="space-y-4">
                   <div className="flex justify-between">
                     <span className="text-dbyou-purple/70">Эффективность</span>
@@ -70,9 +73,11 @@ const BrandMission = () => {
                       <span className="w-3 h-3 rounded-full bg-dbyou-purple"></span>
                     </div>
                   </div>
-                  
+
                   <div className="flex justify-between">
-                    <span className="text-dbyou-purple/70">Многофункциональность</span>
+                    <span className="text-dbyou-purple/70">
+                      Многофункциональность
+                    </span>
                     <div className="flex space-x-1">
                       <span className="w-3 h-3 rounded-full bg-dbyou-purple"></span>
                       <span className="w-3 h-3 rounded-full bg-dbyou-purple"></span>
@@ -81,7 +86,7 @@ const BrandMission = () => {
                       <span className="w-3 h-3 rounded-full bg-dbyou-purple"></span>
                     </div>
                   </div>
-                  
+
                   <div className="flex justify-between">
                     <span className="text-dbyou-purple/70">Научный подход</span>
                     <div className="flex space-x-1">
@@ -92,7 +97,7 @@ const BrandMission = () => {
                       <span className="w-3 h-3 rounded-full bg-dbyou-purple/40"></span>
                     </div>
                   </div>
-                  
+
                   <div className="flex justify-between">
                     <span className="text-dbyou-purple/70">Доступность</span>
                     <div className="flex space-x-1">
@@ -104,11 +109,11 @@ const BrandMission = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="mt-10 p-4 bg-dbyou-light rounded-lg">
                   <p className="text-center text-sm italic">
-                    "Мы не просто создаем косметику, мы предлагаем умные решения для 
-                    современного ритма жизни"
+                    "Мы не просто создаем косметику, мы предлагаем умные решения
+                    для современного ритма жизни"
                   </p>
                 </div>
               </CardContent>
