@@ -20,6 +20,13 @@ const config = {
     },
     extend: {
       colors: {
+        dbyou: {
+          lavender: "#E0D6EA",
+          silver: "#C4C4D0",
+          purple: "#6E6A8F",
+          dark: "#2E2A47",
+          light: "#F8F5FA"
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -57,18 +64,16 @@ const config = {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
           border: "hsl(var(--sidebar-border))",
+          ring: "hsl(var(--sidebar-ring))",
+          primary: "hsl(var(--sidebar-primary))",
+          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
           accent: "hsl(var(--sidebar-accent))",
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          ring: "hsl(var(--sidebar-ring))",
         },
-        // D'BYOU бренд цвета
-        dbyou: {
-          lavender: "#E0D6EA",
-          silver: "#C4C4D0", 
-          purple: "#6E6A8F",
-          dark: "#2E2A47",
-          light: "#F8F5FA"
-        },
+      },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        serif: ["Playfair Display", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -84,33 +89,29 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "logo-appear": {
+          from: { opacity: "0", transform: "translateY(20px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
         "fade-in": {
-          "0%": { opacity: "0", transform: "translateY(10px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" }
+          from: { opacity: "0" },
+          to: { opacity: "1" },
         },
         "slide-in": {
-          "0%": { opacity: "0", transform: "translateX(-20px)" },
-          "100%": { opacity: "1", transform: "translateX(0)" }
+          from: { opacity: "0", transform: "translateX(-10px)" },
+          to: { opacity: "1", transform: "translateX(0)" },
         },
-        "logo-appear": {
-          "0%": { opacity: "0", transform: "scale(0.9)" },
-          "100%": { opacity: "1", transform: "scale(1)" }
-        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 0.7s ease-out",
-        "slide-in": "slide-in 0.5s ease-out",
-        "logo-appear": "logo-appear 1.2s ease-out"
+        "logo-appear": "logo-appear 1.2s ease-out forwards",
+        "fade-in": "fade-in 0.8s ease-out forwards",
+        "slide-in": "slide-in 0.8s ease-out forwards",
       },
-      fontFamily: {
-        serif: ['Playfair Display', 'serif'],
-        sans: ['Inter', 'sans-serif']
-      }
     },
   },
   plugins: [require("tailwindcss-animate"), require('@tailwindcss/typography')],
-} satisfies Config;
+} satisfies Config
 
 export default config;
