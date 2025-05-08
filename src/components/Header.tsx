@@ -10,11 +10,13 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
+  { title: "Приветствие", href: "#welcome" },
   { title: "О бренде", href: "#about" },
-  { title: "Цвета", href: "#colors" },
-  { title: "Типографика", href: "#typography" },
-  { title: "Логотип", href: "#logo" },
+  { title: "Миссия", href: "#mission" },
+  { title: "Продукт", href: "#product" },
+  { title: "Состав", href: "#ingredients" },
   { title: "Применение", href: "#usage" },
+  { title: "Контакты", href: "#contact" },
 ];
 
 const Header = () => {
@@ -37,7 +39,7 @@ const Header = () => {
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6">
+        <nav className="hidden md:flex items-center space-x-4">
           {navItems.map((item) => (
             <Button
               key={item.title}
